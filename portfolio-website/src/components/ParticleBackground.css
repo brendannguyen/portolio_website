@@ -1,0 +1,9 @@
+
+@keyframes reveal {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.particle-background {
+    animation: reveal 4s;
+}

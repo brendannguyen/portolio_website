@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Particles, { initParticlesEngine } from "@tsparticles/react";
 import { loadSlim } from "@tsparticles/slim";
+import './ParticleBackground.css'
 
 const ParticleBackground = ({ children }) => {
     const [init, setInit] = useState(false);
@@ -113,6 +114,7 @@ const ParticleBackground = ({ children }) => {
                     id="tsparticles"
                     particlesLoaded={particlesLoaded}
                     options={options}
+                    className="particle-background"
                 />
                 <div style={{ position: 'relative' }}>
                     {children}
