@@ -6,8 +6,9 @@ const AboutPage = () => {
             initial={{opacity: 0}}
             animate={{opacity: 1}}
             exit={{opacity: 0}}
+            transition={{ease: "linear", duration: 2,}}
         >
-            <h1 style={{color: 'white', zIndex: 1}}>ABOUT</h1>
+            <h1 style={{color: 'white'}}>ABOUT</h1>
         </motion.div>
     )
 }
