@@ -17,16 +17,16 @@ function App() {
   return (
     <BrowserRouter>
       <ParticleBackground>
-      <MediaQuery minWidth={1025}><NavBar/></MediaQuery>
-      <MediaQuery maxWidth={1024}><MobileNavBar/></MediaQuery>
-        <Routes>
-            <Route path="/" element={<HomePage/>} />
-            <Route path="/about" element={<AboutPage/>} />
-            <Route path="/contact" element={<ContactPage/>} />
-            <Route path="/software" element={<SoftwarePage/>} />
-            <Route path="/filmmaking" element={<FilmmakingPage/>} />
-            <Route path="/blog" element={<BlogPage/>} />
-        </Routes>
+        <MediaQuery minWidth={1025}><NavBar/></MediaQuery>
+        <MediaQuery maxWidth={1024}><MobileNavBar/></MediaQuery>
+          <Routes>
+              <Route key='Home' path="/" element={<HomePage/>} />
+              <Route path="/about" element={<AboutPage/>} />
+              <Route path="/contact" element={<ContactPage/>} />
+              <Route path="/software" element={<SoftwarePage/>} />
+              <Route path="/filmmaking" element={<FilmmakingPage/>} />
+              <Route path="/blog" element={<BlogPage/>} />
+          </Routes>
       </ParticleBackground>
     </BrowserRouter>
   );
