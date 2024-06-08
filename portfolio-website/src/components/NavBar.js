@@ -1,7 +1,6 @@
 import { AppBar, Box, Toolbar, useScrollTrigger } from "@mui/material"
 import { Link } from "react-router-dom";
 import './NavBar.css'
-import { useEffect, useState } from "react";
 
 const NavBar = () => {
     const isScroll = useScrollTrigger({

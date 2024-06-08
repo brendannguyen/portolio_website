@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardMedia, List, ListItem, ListItemIcon, ListItemText, Skeleton, Stack, Typography, Divider, IconButton } from '@mui/material';
+import { Box, Card, CardActions, List, ListItem, ListItemIcon, Stack, Typography, IconButton } from '@mui/material';
 import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
@@ -72,8 +72,8 @@ const AboutPage = () => {
                         <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14'}, transition: 'background-color 1s'}}>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Socials</Typography>
                             <CardActions sx={{justifyContent: 'center', marginTop: '0.5em'}}>
-                                <IconButton target="_blank" href='https://github.com/brendannguyen' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><GitHubIcon fontSize='large'/></IconButton>
                                 <IconButton target="_blank" href='https://www.linkedin.com/in/brendan-nguyen-8894b7220/' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><LinkedInIcon fontSize='large'/></IconButton>
+                                <IconButton target="_blank" href='https://github.com/brendannguyen' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><GitHubIcon fontSize='large'/></IconButton>
                             </CardActions>
                         </Card>
                     </Grid>
