@@ -10,7 +10,7 @@ const NavBar = () => {
     });
 
     return (
-        <AppBar position="fixed" style={{backgroundColor: isScroll ? '#0C0C0C' : 'transparent', transition: '0.2s'}} elevation={isScroll ? 5: 0}>
+        <AppBar position="fixed" style={{backgroundColor: isScroll ? '#0C0C0C' : 'transparent', transition: '0.5s'}} elevation={isScroll ? 5: 0}>
             <Toolbar>
                 <Box display="flex" alignItems="center" justifyContent="center" width="100%" padding="1vh">
                     <Link to="/" className="page-link" act >Home</Link>

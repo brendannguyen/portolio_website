@@ -19,7 +19,7 @@ const HomePage = () => {
             <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): ''}>
                 <Grid container spacing={2} maxWidth="80vw">
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
-                        <Card raised sx={{bgcolor: '#481E14', padding: '0.5em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
+                        <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
                             <CardMedia sx={{height: '25em', maxHeight: '25em', width: '100%', borderRadius: 1}} image="/promotion_imgs/spotify_showdown.jpg" title="Spotify Showdown"/>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Spotify Showdown</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
@@ -32,7 +32,7 @@ const HomePage = () => {
                         </Card>
                     </Grid>
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
-                        <Card raised sx={{bgcolor: '#481E14', padding: '0.5em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
+                        <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
                             <CardMedia sx={{height: '25em', borderRadius: 1}} image="/promotion_imgs/justchillax.png" title="Just Chillax"/>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Just Chillax</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
@@ -45,7 +45,7 @@ const HomePage = () => {
                         </Card>
                     </Grid>
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
-                        <Card raised sx={{bgcolor: '#481E14', padding: '0.5em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
+                        <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
                             <Skeleton animation="wave" variant="rounded" height='25em' />
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>In Progress...</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
