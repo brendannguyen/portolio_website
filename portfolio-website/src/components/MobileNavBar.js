@@ -7,6 +7,7 @@ import './NavBar.css'
 const MobileNavBar = () => {
     const [open, setOpen] = useState(false);
 
+    // this could probably be better
     let menuTitle = useLocation().pathname;
     if (menuTitle === '/') menuTitle = 'Home';
     else {

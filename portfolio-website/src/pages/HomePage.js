@@ -2,12 +2,20 @@ import { motion } from 'framer-motion';
 import Grid from '@mui/material/Unstable_Grid2';
 import { Box, Button, Card, CardActions, CardMedia, Skeleton, Typography } from '@mui/material';
 import { useMediaQuery } from 'react-responsive';
+import './HomePage.css';
+import { Link } from 'react-router-dom';
+import { useIsOverflow } from '../hooks/UseIsOverflow';
+import { useRef } from 'react';
 
 
 // TO DO: MAP CARDS
 const HomePage = () => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+
+    // check for overflow, then set margin
+    const gridRef = useRef();
+    const isOverflow = useIsOverflow(gridRef);
 
     return (
         <motion.div
@@ -16,11 +24,14 @@ const HomePage = () => {
             exit={{opacity: 0}}
             transition={{ease: "linear", duration: 2}}
         >
-            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): ''}>
-                <Grid container spacing={2} maxWidth="80vw">
+            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): (isOverflow ? '5em' : '')}>
+                <Grid ref={gridRef} container spacing={2} maxWidth="80vw" maxHeight='100vh'>
+                    <Grid xs={isTabletOrMobile ? 12 : 6 } mdOffset={isTabletOrMobile ? 0 : 3} sx={{textAlign: 'center'}}>
+                        <Link to="/about" className="name-title"><h1 className='name-title'>Hey, I'm Brendan.</h1></Link>
+                    </Grid>
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
                         <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
-                            <CardMedia sx={{height: '25em', maxHeight: '25em', width: '100%', borderRadius: 1}} image="/promotion_imgs/spotify_showdown.jpg" title="Spotify Showdown"/>
+                            <CardMedia sx={{height: '25em', maxHeight: '25em', width: '100%', borderRadius: 1}} image="/promotion_imgs/spotify_showdown.webp" title="Spotify Showdown"/>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Spotify Showdown</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
                                 Play shared or your own Spotify playlists in a knockout style tournament.

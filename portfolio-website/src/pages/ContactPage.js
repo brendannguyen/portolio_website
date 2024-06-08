@@ -3,11 +3,12 @@ import Grid from '@mui/material/Unstable_Grid2/Grid2';
 import { motion } from 'framer-motion';
 import { useMediaQuery } from 'react-responsive';
 import { styled } from '@mui/material/styles';
-import { useState } from 'react';
+import { useRef, useState } from 'react';
 
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
+import { useIsOverflow } from '../hooks/UseIsOverflow';
 
 
 
@@ -28,6 +29,10 @@ const ContactPage = () => {
 
     const [expanded, setExpanded] = useState(false);
 
+    // check for overflow, then set margin
+    const gridRef = useRef();
+    const isOverflow = useIsOverflow(gridRef);
+
     const handleExpandClick = () => {
       setExpanded(!expanded);
     };
@@ -42,8 +47,8 @@ const ContactPage = () => {
             exit={{opacity: 0}}
             transition={{ease: "linear", duration: 2}}
         >
-            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): ''}>
-                <Grid container spacing={2} maxWidth="80vw">
+            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): (isOverflow ? '5em' : '')}>
+                <Grid ref={gridRef} container spacing={2} maxWidth="80vw" maxHeight='100vh'>
                     <Grid>
                         <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Contact Me</Typography>

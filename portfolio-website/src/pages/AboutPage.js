@@ -8,11 +8,17 @@ import VideocamIcon from '@mui/icons-material/Videocam';
 import ArchitectureIcon from '@mui/icons-material/Architecture';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import { useRef } from 'react';
+import { useIsOverflow } from '../hooks/UseIsOverflow';
 
 
 const AboutPage = () => {
     const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1024px)' })
     const isPortrait = useMediaQuery({ query: '(orientation: portrait)' })
+
+    // check for overflow, then set margin
+    const gridRef = useRef();
+    const isOverflow = useIsOverflow(gridRef);
 
     return (
         <motion.div
@@ -21,8 +27,8 @@ const AboutPage = () => {
             exit={{opacity: 0}}
             transition={{ease: "linear", duration: 2}}
         >
-            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): ''}>
-                <Grid container spacing={2} maxWidth="80vw">
+            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): (isOverflow ? '5em' : '')}>
+                <Grid ref={gridRef} container spacing={2} maxWidth="80vw" maxHeight='100vh'>
                     <Grid xs={isTabletOrMobile ? 12 : 6 }>
                         <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14' }, transition: 'background-color 1s'}}>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>About Me</Typography>
