@@ -47,7 +47,7 @@ const ContactPage = () => {
             exit={{opacity: 0}}
             transition={{ease: "linear", duration: 2}}
         >
-            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '10vh' : '10vw'): (isOverflow ? '5em' : '')}>
+            <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '15vh' : '15vw'): (isOverflow ? '5em' : '')}>
                 <Grid ref={gridRef} container spacing={2} maxWidth="80vw" maxHeight='100vh'>
                     <Grid>
                         <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
