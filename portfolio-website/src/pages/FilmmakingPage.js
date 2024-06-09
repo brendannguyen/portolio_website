@@ -1,4 +1,4 @@
-import { Box, Card, CardActions, CardMedia, Divider, Grid, IconButton, List, ListItem, ListItemIcon, Stack, SvgIcon, Typography } from '@mui/material';
+import { Box, Card, CardActions, CardMedia, Grid, IconButton, List, ListItem, ListItemIcon, Stack, SvgIcon, Typography } from '@mui/material';
 import { motion } from 'framer-motion';
 import FilmCard from '../components/FilmCard';
 import { useMediaQuery } from 'react-responsive';
