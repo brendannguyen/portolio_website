@@ -8,9 +8,6 @@ const BlogPage = () => {
             exit={{opacity: 0}}
             transition={{ease: "linear", duration: 2,}}
         >
-            
-                <h1 style={{color: 'white', zIndex: 1}}>BLOG</h1>
-            
         </motion.div>
     )
 }

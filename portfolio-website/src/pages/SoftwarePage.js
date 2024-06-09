@@ -1,4 +1,5 @@
-import { Box, Card, CardActions, Grid, IconButton, SvgIcon, Typography } from '@mui/material';
+import { Box, Card, CardActions, IconButton, SvgIcon, Typography } from '@mui/material';
+import Grid from '@mui/material/Unstable_Grid2';
 import { motion } from 'framer-motion';
 import { useRef } from 'react';
 import { useIsOverflow } from '../hooks/UseIsOverflow';
@@ -34,7 +35,7 @@ const SoftwarePage = () => {
                                 <IconButton target="_blank" href='https://github.com/brendannguyen' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><GitHubIcon fontSize='large'/></IconButton>
                                 <IconButton target="_blank" href='https://play.google.com/store/apps/dev?id=4725217607813660973' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><ShopIcon fontSize='large'/></IconButton>
                                 <IconButton target="_blank" href='https://huggingface.co/bread03' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><SvgIcon component={HuggingFaceIcon} inheritViewBox fontSize='large' /></IconButton>
-                                <IconButton target="_blank" href='https://leetcode.com/akimbear/' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><SvgIcon component={LeetCodeIcon} inheritViewBox fontSize='large' /></IconButton>
+                                <IconButton target="_blank" href='https://leetcode.com/akimbear/' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><SvgIcon component={LeetCodeIcon} title='' inheritViewBox fontSize='large' /></IconButton>
                             </CardActions>
                         </Card>
                     </Grid>
