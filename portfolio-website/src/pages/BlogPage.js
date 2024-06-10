@@ -35,8 +35,24 @@ const BlogPage = () => {
 }
 
 const content = [
-    {heading: 'Portfolio Website Upgrade!!!',
+    {heading: 'GitHub LFS Usage Limits are gonna kill me...',
         date: '10/06/2024', 
+        body: "So yep...I exceeded my LFS usage limits and couldn't deploy my projects anymore or clone my repositories RIP. So I decided to figure out how to avoid using LFS as much as possible. This meant going through all large files (mainly videos) and hosting them on YouTube and using iframes instead. This also meant that I had to somehow reduce the file size of my 3D model for my 'Just Chillax' web app. After trying to compress using gltfjsx and gltfpack, it combined meshes and caused material bugs. I thought I was done for the day until I came across GM Viewer which saved my life. I used this to optimise my texture resolution to a suitable size which reduced the model by more than half the size. This also increased performance of viewing the model as well, so in the end, the annoyance of GitHub LFS limits became a positive. Thankfully. :)",
+        skills: [
+            {label: 'GitHub'},
+            {label: 'Git LFS'},
+            {label: 'GLB Compression'},
+        ], 
+        media: [
+            {src: '/blog_media/gmviewer.png', type: 'img', title: "GM Viewer"},
+        ],
+        actions: true,
+        buttons: [
+            {href: 'https://githubdragonfly.github.io/viewers/templates/GM%20Viewer.html', text: 'GM Viewer'},
+        ],
+    },
+    {heading: 'Portfolio Website Upgrade!!!',
+        date: '09/06/2024', 
         body: "My previous portfolio website needed an upgrade. To be honest, it looked old and like a dark web website using html and css. I decided to again use React and JavaScript to create a new website that was modern, responsive and fun to make. I made heavy use of the MUI libary, especially its Grid component for entries on each page which gave a more finished look that was adaptive to different screens. There were some challenges with the navigation bar on top but overall a fun experience again and it was great to create components that could be reused, unlike the previous website where I was repeating code again and again. Similarly to the Just Chillax app, I deployed my new website on Vercel. Enjoy the website!",
         skills: [
             {label: 'React'},
