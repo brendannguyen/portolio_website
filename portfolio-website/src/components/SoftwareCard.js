@@ -13,7 +13,7 @@ const SoftwareCard = (props) => {
             {props.media &&
                 <Stack direction='row'  width='100%' justifyContent='center' flexWrap='wrap'  maxHeight='35vh' overflow='auto'>
                     {props.media && props.media.map((media) => (
-                        <CardMedia  sx={{ width: '40%', borderRadius: 3, padding: '0.5em'}} src={media.src} component={media.type} title={media.title} controls/>
+                        <CardMedia  sx={{ width: '40%', borderRadius: 3, padding: '0.5em'}} src={media.src} component={media.type} title={media.title} controls allow="fullscreen" frameborder="0" />
                     ))}
                 </Stack>
             }

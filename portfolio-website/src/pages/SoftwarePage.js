@@ -138,6 +138,21 @@ const content = [
             {href: 'https://www.dropbox.com/scl/fi/q0r4hpimr213k4y2jxzy9/FieryDragons.jar?rlkey=vbirsddsp7jh3o2blxrqsaps9&st=3hbyno6w&dl=0', text: 'DROPBOX'}
         ],
     },
+    {heading: 'Beat Em Up Game Prototype (University Project)', 
+        body: "During a games programming unit, I learnt C++ and programming using Unreal Engine 5. The project required me to create self defined core mechanics for the game in C++. These mechancis were force abilities and the buying and placing of traps for enemies. I improved my C++ programming skills as well as learning UE5 such as AI, UI, and using blueprints with C++ classes. I also learnt how to use particle systems (Niagara System) for particples within the game and how to implement C++ interactions with these effects. This was a new and amazing learning experience as I learnt new skills in C++ and Unreal Engine 5, providing me with the basic foundation to continuously develop on my own.",
+        skills: [
+            {label: 'C++'},
+            {label: 'Unreal Engine 5'},
+            {label: 'Games Programming'},
+        ], 
+        media: [
+            {src: 'https://www.youtube.com/embed/AchB0tI2EpY?si=skBsK3spYePZUkXQ', type: 'iframe', title: 'Menu'},
+        ],
+        actions: true,
+        buttons: [
+            {href: 'https://www.dropbox.com/scl/fi/niowj4vv9e3l1pbl3yyer/Game-Prototype.zip?rlkey=hh6kqajs70ifzbwpcr00dya78&st=e2xqf51y&dl=0', text: 'DROPBOX'}
+        ],
+    },
     {heading: 'Old Portfolio Website...yikes...', 
         body: "I wanted to continue my learning and improvement in web development using HTML, JavaScript and CSS, so I decided to create my own personal portfolio website using GitHub Pages. This also allowed me to strengthen my knowledge and skills using GitHub as well. This became a very fun project and hope to continously add and improve the website.",
         skills: [
