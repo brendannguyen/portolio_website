@@ -99,7 +99,7 @@ const content = [
             {src: '/software_media/jrvs3.png', type: 'img', title: 'Team 2 Deliverables'},
             {src: '/software_media/jrvs2.png', type: 'img', title: 'Team 3 Deliverables'},
             {src: '/software_media/jrvs4.png', type: 'img', title: 'Customer Profile'},
-            {src: '/software_media/jrvs_milestone_demo_pres.mp4', type: 'video', title: 'JRVS WIP Demo - Skip to 9:32 for demo'},
+            {src: 'https://www.youtube.com/embed/_owp_3VytH0?si=D5ScflMUfAWhEFeB', type: 'iframe', title: 'JRVS WIP Demo - Skip to 9:32 for demo'},
         ],
         actions: true,
         buttons: [
