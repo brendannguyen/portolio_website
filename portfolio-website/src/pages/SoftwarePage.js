@@ -60,8 +60,8 @@ const content = [
             {label: 'Android Studio'},
         ], 
         media: [
-            {src: '/software_media/app_walkthrough.mp4', type: 'video', title: 'App Walkthrough'},
-            {src: '/software_media/svs.mp4', type: 'video', title: 'Code'},
+            {src: 'https://www.youtube.com/embed/XoZDzux3nIc?si=bs-MhNQrEc2RnmmS', type: 'iframe', title: 'App Walkthrough'},
+            {src: 'https://www.youtube.com/embed/Ck35GfFSfZ0?si=A7JIabvCalksX0tr', type: 'iframe', title: 'Code'},
         ],
         actions: true,
         buttons: [
@@ -78,7 +78,7 @@ const content = [
         ], 
         media: [
             {src: '/software_media/blender_model2.png', type: 'img', title: 'Room 3D Model'},
-            {src: '/software_media/webapp.webm', type: 'video', title: 'Just Chillax'},
+            {src: 'https://www.youtube.com/embed/AVCQRZpAXDc?si=37O0kU8SM15VuIrJ', type: 'iframe', title: 'Just Chillax'},
         ],
         actions: true,
         buttons: [
@@ -211,7 +211,7 @@ const content = [
         ], 
         media: [
             {src: '/software_media/arduinotraffic.jpg', type: 'img', title: 'Traffic System Breadboard'},
-            {src: '/software_media/traffic_system_python_code.mp4', type: 'video', title: 'Traffic System Python Code'},
+            {src: 'https://www.youtube.com/embed/O_IO_gHcM9Y?si=VQ1KtXtxmWfUiQmW', type: 'iframe', title: 'Traffic System Python Code'},
         ],
         actions: false,
         buttons: false,
