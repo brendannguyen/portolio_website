@@ -57,8 +57,8 @@ const HomePage = () => {
                     </Grid>
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
                         <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
-                            <Skeleton animation="wave" variant="rounded" height='25em' />
-                            <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>In Progress...</Typography>
+                            <CardMedia sx={{height: '25em', borderRadius: 1}} image="/promotion_imgs/BingeOptimizerPreview.jpg" title="Just Chillax"/>
+                            <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Binge Optimizer Coming Soon...</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
                                 <Skeleton animation="wave" variant="text"/>
                             </Typography>
