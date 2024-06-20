@@ -57,13 +57,14 @@ const HomePage = () => {
                     </Grid>
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
                         <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
-                            <CardMedia sx={{height: '25em', borderRadius: 1}} image="/promotion_imgs/BingeOptimizerPreview.jpg" title="Just Chillax"/>
+                            <CardMedia sx={{height: '25em', borderRadius: 1}} image="/promotion_imgs/bingeoptimizer.png" title="Just Chillax"/>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Binge Optimizer Coming Soon...</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
-                                <Skeleton animation="wave" variant="text"/>
+                                Search and add movies and TV shows to your list to get relevant recommendations. Explore each film or TV show with up-to-date details such as reviews, cast and the streaming platforms that provide them.
+                                Ease subscription fatigue with this quick and simple platform.
                             </Typography>
                             <CardActions sx={{justifyContent: 'center', marginTop: '0.5em'}}>
-                                <Skeleton animation="wave" sx={{textAlign: 'center'}} variant="rounded" height="2em" width="8em"/>
+                                <Button target="_blank" href='https://bingeoptimizer.vercel.app/' size='small' variant="outlined" sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}}>START OPTIMIZING NOW</Button>
                             </CardActions>
                         </Card>
                     </Grid>

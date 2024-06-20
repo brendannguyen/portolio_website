@@ -52,6 +52,22 @@ const SoftwarePage = () => {
 
 // software content (can convert to db when needed)
 const content = [
+    {heading: 'Binge Optimizer', 
+        body: "Using TMDB API, I wanted to create a platform that can help provide relevant recommendations based on my current list of content that I want to see more of. This all came about when I was struggling to find something to watch one afternoon and lists from crappy sites like buzzfeed weren't giving me any good ideas. So I decided to figure out how to do this myself. This project required a lot of thinking and it helped to think of everything as its own object in the problem space. I also tried something new and designed the layout/overall design of the website using Figma before implementing any code. This helped a lot in the developing process as I had a clear reference when coding. Overall, this was fun and now I'll never struggle to find something to watch again.",
+        skills: [
+            {label: 'TMDB API'},
+            {label: 'React'},
+            {label: 'JavaScript'},
+        ], 
+        media: [
+            {src: 'https://www.youtube.com/embed/j_eng2lPVUA?si=Gb2pdnUeYoSIU5iI', type: 'iframe', title: 'Binge Optimizer Walkthrough'},
+            {src: '/software_media/bingeoptimizer.png', type: 'img', title: 'Binge Optimizer'},
+        ],
+        actions: true,
+        buttons: [
+            {href: 'https://bingeoptimizer.vercel.app/', text: 'START OPTIMIZING NOW'}
+        ]
+    },
     {heading: 'Song Showdown for Spotify', 
         body: "Using the Spotify API for web and android, I created an android app that allows a user to log in using their spotify account, search public playlists (including their own) and use those to play a knockout styled tournament between songs to find out which song is the best. It provides previews of songs to compare and full songs (when previews aren't available) if the user has Spotify Premium, it also allows users to like songs which will be added to their Spotify liked songs or access the song page on Spotify. This project came about when my friends and I would compare songs in a similar fashion using an outdated website and was built using Java and Android Studio.",
         skills: [

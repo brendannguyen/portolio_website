@@ -35,6 +35,51 @@ const BlogPage = () => {
 }
 
 const content = [
+    {heading: "More projects coming soon.",
+        date: '21/06/2024', 
+        body: "Another project is in the works...",
+        skills: [
+        ], 
+        media: [
+            {src: 'https://i.pinimg.com/originals/8f/d7/16/8fd716a4dd584edece28800a0d52eed1.jpg', type: 'img', title: "Binge Optimizer"},
+        ],
+        actions: true,
+        buttons: [
+    
+        ],
+    },
+    {heading: "I'll never struggle to find a movie to watch again.",
+        date: '20/06/2024', 
+        body: "I pretty much have completed the binge optimizer app, and is currently deployed, there are some minor things that need adjusting but other than that, completely usable and useful. Similarly to my other projects, I have deployed it on Vercel for now, so give it a try and like me, you will never run out of movies and shows to watch. As previously mentioned, this app gives you recommendations of new content to watch based on a list of movies and shows chosen by you, so allways receive relevant recommodations based on your tastes. It uses TMDB API to fetch content data and also uses react-youtube to provide you with trailers and videos of all content shown on binge optimizer. This app was mainly for me, I constantly struggle to find new content to watch. Enjoy :)",
+        skills: [
+            {label: 'Vercel'},
+            {label: 'React'},
+            {label: 'TMDB API'},
+        ], 
+        media: [
+            {src: '/software_media/bingeoptimizer.png', type: 'img', title: "Binge Optimizer"},
+        ],
+        actions: true,
+        buttons: [
+            {href: 'https://bingeoptimizer.vercel.app/', text: 'START OPTIMIZING NOW'},
+        ],
+    },
+    {heading: "First time utilizing Figma before coding a single line",
+        date: '15/06/2024', 
+        body: "I have an idea for a new project that gives recommendations of new movies and tv shows based on your tastes. It also should give details about each content to the user. I started the project by first using Figma to design the app and its layout. This isis one of the first times I have decided to use Figma before coding, and it has helped a lot. I now have a clear foundation and reference when developing and also mentally encouraged and motivated me to put more effort into the project since I had fun and can see a design for the app.",
+        skills: [
+            {label: 'Figma'},
+            {label: 'Design Process'},
+            {label: 'React'},
+        ], 
+        media: [
+            {src: '/blog_media/bingeoptimizerfigma.jpg', type: 'img', title: "Binge Optimizer"},
+        ],
+        actions: true,
+        buttons: [
+            {href: 'https://www.figma.com/design/nKI8g9aA2swEQTlB4iLYwx/Binge-Optimizer?node-id=12-2&t=BZIzfs7SeDA3KiAS-1', text: 'FIGMA PROJECT'},
+        ],
+    },
     {heading: 'GitHub LFS Usage Limits are gonna kill me...',
         date: '10/06/2024', 
         body: "So yep...I exceeded my LFS usage limits and couldn't deploy my projects anymore or clone my repositories RIP. So I decided to figure out how to avoid using LFS as much as possible. This meant going through all large files (mainly videos) and hosting them on YouTube and using iframes instead. This also meant that I had to somehow reduce the file size of my 3D model for my 'Just Chillax' web app. After trying to compress using gltfjsx and gltfpack, it combined meshes and caused material bugs. I thought I was done for the day until I came across GM Viewer which saved my life. I used this to optimise my texture resolution to a suitable size which reduced the model by more than half the size. This also increased performance of viewing the model as well, so in the end, the annoyance of GitHub LFS limits became a positive. Thankfully. :)",
