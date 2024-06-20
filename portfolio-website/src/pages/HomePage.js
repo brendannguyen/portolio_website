@@ -58,7 +58,7 @@ const HomePage = () => {
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
                         <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
                             <CardMedia sx={{height: '25em', borderRadius: 1}} image="/promotion_imgs/bingeoptimizer.png" title="Just Chillax"/>
-                            <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Binge Optimizer Coming Soon...</Typography>
+                            <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Binge Optimizer</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
                                 Search and add movies and TV shows to your list to get relevant recommendations. Explore each film or TV show with up-to-date details such as reviews, cast and the streaming platforms that provide them.
                                 Ease subscription fatigue with this quick and simple platform.
