@@ -38,7 +38,7 @@ const HomePage = () => {
                                 Connect your Spotify account to play tournaments with Spotify playlists where you can listen to and like all songs within your tournament.
                             </Typography>
                             <CardActions sx={{justifyContent: 'center', marginTop: '0.5em'}}>
-                                <Button target="_blank" href='https://play.google.com/store/apps/details?id=com.bn.songvsong&pcampaignid=pcampaignidMKT-Other-global-all-co-prtnr-py-PartBadge-Mar2515-1' size='small' variant="outlined" sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}}>GET ON GOOGLE PLAY</Button>
+                                <Button target="_blank" href='https://play.google.com/store/apps/details?id=com.bn.songvsong' size='small' variant="outlined" sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}}>GET ON GOOGLE PLAY</Button>
                             </CardActions>
                         </Card>
                     </Grid>

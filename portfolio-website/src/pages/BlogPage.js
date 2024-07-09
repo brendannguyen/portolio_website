@@ -36,7 +36,7 @@ const BlogPage = () => {
 
 const content = [
     {heading: "More projects coming soon.",
-        date: '21/06/2024', 
+        date: '10/07/2024', 
         body: "Another project is in the works...",
         skills: [
         ], 
@@ -46,6 +46,21 @@ const content = [
         actions: true,
         buttons: [
     
+        ],
+    },
+    {heading: "Spotify Showdown Update",
+        date: '09/07/2024', 
+        body: "Users can now see trending/popular playlists in their country, and can now play those.",
+        skills: [
+            {label: 'Android Studio'},
+            {label: 'App Development'},
+        ], 
+        media: [
+            {src: '/promotion_imgs/spotify_showdown.webp', type: 'img', title: "Spotify Showdown"},
+        ],
+        actions: true,
+        buttons: [
+            {href: 'https://play.google.com/store/apps/details?id=com.bn.songvsong', text: 'GET ON GOOGLE PLAY'},
         ],
     },
     {heading: "I'll never struggle to find a movie to watch again.",
