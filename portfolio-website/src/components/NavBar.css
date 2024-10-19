@@ -18,6 +18,10 @@
     animation: reveal 1s 0s forwards;
 }
 
+.page-link:hover {
+    font-weight: 600;
+}
+
 .page-link-mobile {
     opacity: 0;
     font-family: "Rubik", sans-serif;
