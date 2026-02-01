@@ -1,4 +1,4 @@
-import { Card, CardMedia, Chip, Stack, Typography } from "@mui/material"
+import { Card, Chip, Stack, Typography } from "@mui/material"
 
 
 const FilmCard = (props) => {
