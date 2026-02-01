@@ -37,6 +37,7 @@ const HomePage = () => {
                                 Play shared or your own Spotify playlists in a knockout style tournament.
                                 Connect your Spotify account to play tournaments with Spotify playlists where you can listen to and like all songs within your tournament.
                             </Typography>
+                            <Typography variant="body2" gutterBottom color="white"  textAlign="center" marginTop='0.5em'>2.6K+ Downloads</Typography>
                             <CardActions sx={{justifyContent: 'center', marginTop: '0.5em'}}>
                                 <Button target="_blank" href='https://play.google.com/store/apps/details?id=com.bn.songvsong' size='small' variant="outlined" sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}}>GET ON GOOGLE PLAY</Button>
                             </CardActions>

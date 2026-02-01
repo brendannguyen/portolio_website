@@ -30,10 +30,11 @@ const AboutPage = () => {
             <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '15vh' : '15vw'): (isOverflow ? '5em' : '')}>
                 <Grid ref={gridRef} container spacing={2} maxWidth="80vw" maxHeight='100vh'>
                     <Grid xs={isTabletOrMobile ? 12 : 6 }>
+                        <Stack spacing={2}>
                         <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14' }, transition: 'background-color 1s'}}>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>About Me</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
-                                I am currently a third year software engineering student at Monash University with a passion for technology and programming, driven to continuously explore the tech space, and learn and develop as a person and as a software engineer.
+                                I am currently a final year software engineering student at Monash University with a passion for technology and programming, driven to continuously explore the tech space, and learn and develop as a person and as a software engineer.
                             </Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
                                 I have experiences in the sports media industry and in the retail industry which has taught me valuable lessons and has helped me to develop my collaborating skills to output a product or service that is effective and of as high quality as possible. I am always eager to learn new skills and gain new experiences, so please feel free to contact me relating to potential opportunities in software and filmmaking.
@@ -42,7 +43,7 @@ const AboutPage = () => {
                             <List sx={{textAlign: 'center'}}>
                                 <ListItem sx={{justifyContent: 'center'}}>
                                     <ListItemIcon sx={{color: "#F2613F"}}><EngineeringIcon/></ListItemIcon>
-                                    <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center" margin={0}>[2022 - 2025] Bachelor of Software Engineering (Honours)</Typography>
+                                    <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center" margin={0}>[2022 - 2026] Bachelor of Software Engineering (Honours)</Typography>
                                 </ListItem>
                                 <ListItem sx={{justifyContent: 'center'}}>
                                     <ListItemIcon sx={{color: "#F2613F"}}><VideocamIcon/></ListItemIcon>
@@ -54,16 +55,37 @@ const AboutPage = () => {
                                 </ListItem>
                             </List>
                         </Card>
+                        <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14'}, transition: 'background-color 1s'}}>
+                            <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Socials</Typography>
+                            <CardActions sx={{justifyContent: 'center', marginTop: '0.5em'}}>
+                                <IconButton target="_blank" href='https://www.linkedin.com/in/brendan-nguyen-8894b7220/' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><LinkedInIcon fontSize='large'/></IconButton>
+                                <IconButton target="_blank" href='https://github.com/brendannguyen' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><GitHubIcon fontSize='large'/></IconButton>
+                            </CardActions>
+                        </Card>
+                        </Stack>
                     </Grid>
                     <Grid xs={isTabletOrMobile ? 12 : 6 }>
                         <Stack spacing={2}>
                         <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14'}, transition: 'background-color 1s'}}>
+                            <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Experiences</Typography>
+                            <List sx={{textAlign: 'center'}}>
+                                <ListItem sx={{justifyContent: 'center'}}>
+                                    <ListItemIcon sx={{color: "#F2613F"}}><EngineeringIcon/></ListItemIcon>
+                                    <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center" margin={0}>[Jan 2026 - Present] Software Developer @ Leidos Australia</Typography>
+                                </ListItem>
+                                <ListItem sx={{justifyContent: 'center'}}>
+                                    <ListItemIcon sx={{color: "#F2613F"}}><EngineeringIcon/></ListItemIcon>
+                                    <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center" margin={0}>[Jan 2025 - Jan 2026] Software Intern @ Leidos Australia</Typography>
+                                </ListItem>
+                            </List>
+                        </Card>
+                        <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14'}, transition: 'background-color 1s'}}>
                             <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Skills & Proficiencies</Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
-                                Java, JavaScript, React, CSS, HTML, C, C++, Python, Adobe Premiere Pro, Adobe Illustrator, Microsoft Office, Google SketchUp, Pro Tools, MATLAB, Android Studio, Git, GitHub, Unreal Engine 5, MIPS Assembly Code
+                                Java, JavaScript, React, CSS, HTML, C, C++, Python, Adobe Premiere Pro, Adobe Illustrator, Microsoft Office, Google SketchUp, Pro Tools, MATLAB, Android Studio, Git, GitHub, Unreal Engine 5, MIPS Assembly Code, MCP, Terraform, Ansible, Kubernetes, AWS
                             </Typography>
                             <Typography marginTop='0.5em' variant="body2" color="#F2613F" textAlign="center">
-                                Drafting, Production Assistance, Programming, Collaborating, Teamwork, Customer Service, Sales, Editing, Setting up camera equipment, analysing and discussing film, adequate writing and mathematic skills
+                                Drafting, Production Assistance, Programming, Collaborating, Teamwork, Customer Service, Sales, Editing, Setting up camera equipment, analysing and discussing film, adequate writing and mathematic skills, presenting and demonstrating R&D projects to stakeholders and executives
                             </Typography>
                         </Card>
                         <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14'}, transition: 'background-color 1s'}}>
@@ -73,15 +95,6 @@ const AboutPage = () => {
                             </Typography>
                         </Card>
                         </Stack>
-                    </Grid>
-                    <Grid xs={isTabletOrMobile ? 12 : 4 } mdOffset={isTabletOrMobile ? 0 : 4}>
-                        <Card raised sx={{bgcolor: '#00224D', padding: '1em', '&:hover': {bgcolor: '#481E14'}, transition: 'background-color 1s'}}>
-                            <Typography variant="h5" gutterBottom color="#F2613F"  textAlign="center" marginTop='0.5em'>Socials</Typography>
-                            <CardActions sx={{justifyContent: 'center', marginTop: '0.5em'}}>
-                                <IconButton target="_blank" href='https://www.linkedin.com/in/brendan-nguyen-8894b7220/' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><LinkedInIcon fontSize='large'/></IconButton>
-                                <IconButton target="_blank" href='https://github.com/brendannguyen' sx={{color: 'white', borderColor: 'white', ":hover": {color: '#F2613F', borderColor: '#F2613F'}}} ><GitHubIcon fontSize='large'/></IconButton>
-                            </CardActions>
-                        </Card>
                     </Grid>
                 </Grid> 
             </Box>

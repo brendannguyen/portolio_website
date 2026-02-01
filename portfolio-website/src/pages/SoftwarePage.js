@@ -84,7 +84,7 @@ const content = [
             {href: 'https://play.google.com/store/apps/details?id=com.bn.songvsong', text: 'GET ON GOOGLE PLAY'}
         ]
     },
-    {heading: 'Just Chillax (WIP)', 
+    {heading: 'Just Chillax', 
         body: "I wanted to continue my learning and improvement in web development using React and Three.js, so I decided to start creating a web 2000s experience using 3D scenes. The idea of Just Chillax is to allow users to interact with a 2000s bedroom such as watching TV or using the computer in the scene, as well as interacting with other objects in the room. Giving a nostalgic experience for people using the web application. I hope to finish it and publish the website soon.",
         skills: [
             {label: 'React'},

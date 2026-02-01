@@ -75,12 +75,12 @@ const FilmmakingPage = () => {
 }
 
 const content = [
-    {heading: 'Artificial Observation', src: 'https://www.dailymotion.com/embed/video/x813av5', skills: [{label: 'After Effects'}, {label: 'Editing'}, {label: 'Found Footage'}]},
-    {heading: 'The House Always Wins.', src: 'https://www.dailymotion.com/embed/video/x8266rj', skills: [{label: 'After Effects'}, {label: 'Alternative Animation'}, {label: 'Stop Motion'}]},
-    {heading: 'Hey Little Buddy.', src: 'https://www.dailymotion.com/embed/video/x8266qs', skills: [{label: 'After Effects'}, {label: 'Animation'}, {label: 'Comedy'}, {label: 'Future Machina'}]},
-    {heading: 'The Brick', src: 'https://www.dailymotion.com/embed/video/x7wubcr', skills: [{label: 'Editing'}, {label: 'Satire'}, {label: 'Comedy'}]},
-    {heading: 'How Do You Ask For A Date?', src: 'https://www.dailymotion.com/embed/video/x7uy6mz', skills: [ {label: 'Archived Footage'}, {label: 'Editing'}, {label: 'Experimental'}]},
-    {heading: 'Insistent Anxiousness (Soundscape)', src: 'https://www.dailymotion.com/embed/video/x7scm2p', skills: [{label: 'Sound Editing'}, {label: 'Soundscape'}, {label: 'Circumplex Model'}]},
+    {heading: 'Artificial Observation', src: 'https://geo.dailymotion.com/player/xpiw2.html?video=x813av5', skills: [{label: 'After Effects'}, {label: 'Editing'}, {label: 'Found Footage'}]},
+    {heading: 'The House Always Wins.', src: 'https://geo.dailymotion.com/player/xpiw2.html?video=x8266rj', skills: [{label: 'After Effects'}, {label: 'Alternative Animation'}, {label: 'Stop Motion'}]},
+    {heading: 'Hey Little Buddy.', src: 'https://geo.dailymotion.com/player/xpiw2.html?video=x8266qs', skills: [{label: 'After Effects'}, {label: 'Animation'}, {label: 'Comedy'}, {label: 'Future Machina'}]},
+    {heading: 'The Brick', src: 'https://geo.dailymotion.com/player/xpiw2.html?video=x7wubcr', skills: [{label: 'Editing'}, {label: 'Satire'}, {label: 'Comedy'}]},
+    {heading: 'How Do You Ask For A Date?', src: 'https://geo.dailymotion.com/player/xpiw2.html?video=x7uy6mz', skills: [ {label: 'Archived Footage'}, {label: 'Editing'}, {label: 'Experimental'}]},
+    {heading: 'Insistent Anxiousness (Soundscape)', src: 'https://geo.dailymotion.com/player/xpiw2.html?video=x7scm2p', skills: [{label: 'Sound Editing'}, {label: 'Soundscape'}, {label: 'Circumplex Model'}]},
 ];
 
 export default FilmmakingPage;
