@@ -27,7 +27,7 @@ const HomePage = () => {
             <Box display='flex' justifyContent='center' alignItems='center' zIndex={1} sx={{ flexGrow: 1 }} height={isTabletOrMobile ? '': '100vh'} marginTop={isTabletOrMobile ? (isPortrait ? '15vh' : '15vw'): (isOverflow ? '5em' : '')}>
                 <Grid ref={gridRef} container spacing={2} maxWidth="80vw" maxHeight='100vh'>
                     <Grid xs={isTabletOrMobile ? 12 : 6 } mdOffset={isTabletOrMobile ? 0 : 3} sx={{textAlign: 'center'}}>
-                        <Link to="/about" className="name-title"><h1 className='name-title'>Hey, I'm Brendan.</h1></Link>
+                        <Link to="/about" className="name-title"><h1 className='name-title'>Hey, I'm Brendan (mobile version).</h1></Link>
                     </Grid>
                     <Grid xs={isTabletOrMobile ? 12 : 4 }>
                         <Card raised sx={{bgcolor: '#481E14', padding: '1em', '&:hover': {bgcolor: '#00224D'}, transition: 'background-color 1s'}}>
